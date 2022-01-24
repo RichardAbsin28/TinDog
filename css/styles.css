@@ -22,7 +22,7 @@ h2 {
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 
 /* Navigation Bar */
@@ -54,12 +54,16 @@ h2 {
 .title-image {
   width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
 
 /* ----- */
 /* Features */
 #features {
   padding: 7% 15%;
+  background-color: white;
+  position: relative;
 }
 
 .icon {
@@ -89,10 +93,13 @@ h2 {
 /* ----- */
 /* Testimonials */
 #testimonials {
-  padding: 7% 15%;
   text-align: center;
   background-color: #ef8172;
   color: #fff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
 }
 
 .testimonial-image {
@@ -109,5 +116,28 @@ h2 {
 
 .press-logo {
   width: 15%;
-  margin: 20px 20px 50px;  
+  margin: 20px 20px 50px;
+}
+
+/* ---- */
+/* Pricing */
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
